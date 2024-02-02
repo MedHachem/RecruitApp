@@ -16,7 +16,6 @@ Angular Material
 Charts.js
 
 # Features
-![Capture d'écran 2024-02-02 094135](https://github.com/MedHachem/RecruitApp/assets/99909231/8f6bed8d-a846-44f7-be02-836b51bf17b4) 
 ![Capture d'écran 2024-02-02 093616](https://github.com/MedHachem/RecruitApp/assets/99909231/0cc10b3c-23a6-4b0e-afbb-3eeef6bd2f2d)
 ![Capture d'écran 2024-02-02 093712](https://github.com/MedHachem/RecruitApp/assets/99909231/2500afec-8275-4272-853a-70661d1c3f91)
 ![Capture d'écran 2024-02-02 093734](https://github.com/MedHachem/RecruitApp/assets/99909231/7fa0cb83-5cd1-40dd-bdad-80eea47b9910)
@@ -32,6 +31,7 @@ Charts.js
 ![Capture d'écran 2024-02-02 094121](https://github.com/MedHachem/RecruitApp/assets/99909231/285dd3e4-c31c-4cde-af56-fc20fa4231ae)
 
 
+![Capture d'écran 2024-02-02 094135](https://github.com/MedHachem/RecruitApp/assets/99909231/8f6bed8d-a846-44f7-be02-836b51bf17b4) 
 
 
 
