@@ -1,0 +1,66 @@
+<div class="min-h-screen flex flex-col ">
+
+
+    <div class="flex-1 p-7  flex flex-col sm:flex-row">
+      <main class="flex-1 "> 
+        <div class="grid w-4/4 flex-grow card rounded-box ">
+          <div class="px-7 w-full ml-1 rounded bg-cover bg-no-repeat" style="background-image: url('assets/images/Banner1 (7).svg');">
+              <div class="text-center justify-center  text-gray-700">
+                  <div class="flex flex-wrap">
+                      <div class="w-full md:w-3/5  mb-10 md:mb-0">
+                        <h3 class="mb-1 text-2xl pt-12 font-bold text-white">
+                          <span>Make The Best Move to Choose</span>
+                          <span  class="text-green-300"> Your New Job</span>
+                        </h3>
+                        <p class="mb-0 md:mb-0 text-sm font-medium text-indigo-100">Find Jobs, Employment & Career Opportunities. </p>
+                  
+                        <div class=" flex justify-center items-center mt-3 ">
+                          <div class="container mx-auto  rounded-lg pl-4">
+                            <form>
+                             
+                                <div class="sm:flex items-center  bg-base-200 rounded-lg overflow-hidden px-2 py-1 justify-between">
+                                  <input class="text-sm bg-base-200  py-2 rounded-lg text-gray-800 flex-grow outline-none px-2 " type="text" placeholder="Search jobs with keywords .." />
+                                  <div class="ms:flex items-center px-2 rounded-lg space-x-4 mx-auto ">
+                                    <select id="Industry" class="text-sm bg-base-200 text-gray-800 outline-none border-2 px-4 py-2 rounded-lg">
+                                      <option selected disabled>By Industry</option>
+                                    <option value="com" >Finance</option>
+                                    <option value="net">Education</option>
+                                    <option value="org">Design</option>
+                                    <option value="io">Developpement</option>
+                                  </select>
+                                  <select id="Type" class="text-sm bg-base-200 text-gray-800 outline-none border-2 px-4 py-2 rounded-lg">
+                                    <option selected disabled>By Job Type</option>
+                                  <option value="com" >Freelance</option>
+                                  <option value="net">Full Time</option>
+                                  <option value="org">Remote Job</option>
+                                  <option value="io">Online Job</option>
+                                </select>
+                                    <button  class="bg-orange-100 hover:bg-orange-200 text-gray-800 text-sm py-1 px-4 rounded-xl inline-flex items-center">Search</button>
+                                  </div>
+                                </div>
+                            </form>
+                          </div>
+                        </div>
+
+
+                      </div>
+                      <div class="w-full md:w-2/5 flex items-end">
+                        <img class="mx-auto h-48 w-96" src="assets/images/pic.svg" alt="">
+                      </div>
+                      
+                    </div>
+                    
+               </div>                
+              </div>
+      </div>        
+      <app-jobs-list-page></app-jobs-list-page>                
+      
+       
+
+      </main>
+    </div>
+</div>
+  
+  
+  
+  

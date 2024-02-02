@@ -1,0 +1,18 @@
+@media screen and (max-width: 600px) {
+
+    .image
+    {
+      display: none;
+
+    }
+    .jumb
+    {
+        width: 100%;
+    }
+  
+}
+mat-paginator {
+  border-radius: 25px;
+  background: rgb(243, 239, 230);  padding: 1px;
+color:#0c4a6e;
+}

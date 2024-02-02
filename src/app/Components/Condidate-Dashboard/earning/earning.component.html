@@ -1,0 +1,129 @@
+
+<div class="min-h-screen flex flex-col  ">
+         
+    <div class="flex-1 pb-3 pl-10 flex flex-col   sm:flex-row">
+      <main class="flex-1 " > 
+        <div class="flex w-full">
+            <div class="grid w-2/4 flex-grow card  rounded-box place-items-center">  
+                    <canvas id="lineChart" class="ml-12"></canvas>
+                </div>
+
+    <div class="grid w-2/4 flex-grow card  rounded-box place-items-center">  
+    <div class="min-w-48 item-center mt-2 min-h-48 p-3 mb-4 font-medium">
+        <div class="stats text-primary-content">
+      
+                <div class="stat  bg-base-200 hover:bg-green-100">
+                    <div class="stat-figure text-green-400">
+                     <mat-icon>euro_symbol</mat-icon>
+                      </div>
+                      <div class="stat-title  text-green-800">Total Earning</div>
+                      <div class="stat-value text-green-400">15,012</div>
+                      <div class="stat-desc">21% more than last month</div>
+                   
+                </div>  
+            
+                <div class="stat  bg-base-200 hover:bg-blue-100">
+                    <div class="stat-figure text-blue-400">
+                     <mat-icon>euro_symbol</mat-icon>
+                      </div>
+                      <div class="stat-title  text-blue-800">Account balance</div>
+                      <div class="stat-value text-blue-400">30,402</div>
+                      <div class="stat-desc">21% more than last month</div>
+                     
+                </div>  
+            
+            
+          </div>
+        
+    </div>
+    </div>
+        </div>
+    
+        <div class="flex flex-wrap pt-2">
+            <div class="w-full xl:w-4/4 px-4">
+                <div class="relative flex flex-col min-w-0 break-words w-full mb-8 shadow-lg rounded-lg bg-white text-blueGray-700">
+                        <div class="px-6 py-4 bg-orange-50 border-0">
+                            <div class="flex flex-wrap items-center ">
+                                <div class="relative w-full max-w-full flex-grow flex-1">
+                                   <h3 class="font-bold text-lg text-blueGray-700 ">My Jobs Resume:</h3>
+                                   
+                                </div>
+                               
+                             </div>                                
+                        </div>   
+                        <!-- component -->
+
+                <table class="min-w-max w-full table-auto pb-2 ">
+                    <thead>
+                        <tr class="bg-base-200 text-gray-900 uppercase text-md font-semibold leading-normal">
+                            <th class="py-3 px-2 text-left">Title</th>
+                            <th class="py-3 px-2 text-left">Client</th>
+                            <th class="py-3 px-2 text-left">Category</th>
+                            <th class="py-3 px-6 text-left">Price</th>
+                            <th class="py-3 px-8 text-center">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-900 text-sm font-light">
+                        <tr *ngFor="let x of jobitems" class="border-b border-gray-200 hover:bg-orange-50">
+                            <td class="py-1 px-2 ">
+                                <div class="flex items-center">
+                                   
+                                    <span class=" font-bold NaN">{{x.title}}</span>
+                                </div>
+                            </td>
+                            <td class="py-1 px-2 ">
+                                <div class="flex items-center ">
+                                    <div class="mr-2">
+                                        <img class="w-6 h-6 rounded-full" [src]="x.img"/>
+                                    </div>
+                                    <span >{{x.CompanyName}}</span>
+                                </div>
+                            </td>
+                            <td class="py-1 px-2 ">
+                                <div class="flex items-center"> {{x.category}}</div>
+
+                            </td>
+                            <td class="py-1 px-2 text-left" >
+                                <div class="flex items-left">
+                                    <span class="inline-flex items-center m-2 px-2 py-1 bg-blue-200 hover:bg-blue-300 rounded-full text-sm font-semibold text-blue-900">
+                                        <span class="ml-1 mr-1">
+                                            {{x.price}}
+                                        </span>
+                                        $
+                                       
+
+                                      </span>
+                                    </div>
+                            </td>
+                            <td class="py-3 px-6 text-left">
+                                <div class="flex items-center">
+                                    <span class="mr-2">100%</span>
+                                    <div class="relative w-full">
+                                       <div class="overflow-hidden h-2 text-xs flex rounded bg-green-500">
+                                          <div class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500" style="width: 80%;"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                            </td>
+                        </tr>
+                       
+                      
+                    </tbody>
+                </table>
+                          
+                                                 
+                </div>
+            </div>
+        
+                                        
+        </div>
+    
+  
+      </main>
+    </div>
+</div>
+  
+  
+  
+  
+

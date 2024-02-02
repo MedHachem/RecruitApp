@@ -1,0 +1,17 @@
+@import url(//db.onlinewebfonts.com/c/8ebd7a94f8714a402df29fc1328bf0cf?family=Black+Chancery);
+
+h2,h4
+{
+  font-family: "Black Chancery";
+}
+.header
+{
+  background-color: #dbeafe;
+}
+mat-icon {
+  font-size: 20px;
+  height: 20px ;
+  width: 20px;
+  color:#484747;
+  padding-right: 2px;
+}

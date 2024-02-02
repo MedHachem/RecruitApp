@@ -1,0 +1,140 @@
+
+<div class="min-h-screen flex flex-col ">
+         
+    <div class="flex-1 p-7 flex flex-col   sm:flex-row">
+      <main class="flex-1  "> 
+        <div class="flex w-full gap-4">
+          <div class="grid w-3/4 flex-grow card rounded-box ">
+              <div class="px-7 w-full ml-1 rounded " style="background-image: url('assets/images/pic (2).svg');">
+                  <div class="text-center justify-center  text-gray-700">
+                      <div class="flex flex-wrap">
+                          <div class="w-full md:w-1/2  mb-10 md:mb-0">
+                            <h3 class="mb-1 text-2xl pt-12 font-bold text-white">
+                              <span>Your </span>
+                              <span class="text-blue-800">Favourites Jobs</span>
+                              
+                            </h3>
+                            <p class="mb-8 md:mb-16 text-sm font-medium text-gray-500">Make your jobs list more organized.</p>
+                            
+                          </div>
+                          <div class="w-full md:w-1/2 flex items-end">
+                            <img class="mx-auto h-48" src="assets/images/pic (4).svg" alt="">
+                          </div>
+                          
+                        </div>
+                        
+                   </div>
+                    
+                  </div>
+          </div>
+         
+    <div class="grid w-1/4 flex-grow card  rounded-box place-items-center">  
+    <div class="min-w-48 item-center mt-2 min-h-48 p-3 mb-4 font-medium">
+      <div class="stats shadow   mb-5">
+        <div class="stat bg-blue-100 hover:bg-blue-300">
+            <div class="stat-figure  text-blue-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              </div>
+              <div class="stat-title text-blue-800">Favourites Jobs</div>
+              <div class="stat-value text-blue-400">5</div>
+              <div class="stat-desc">21% more than last month</div>
+        </div> 
+      </div>  
+    </div>
+    </div>
+    </div>      
+                
+      <main class="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8 ">
+          <section class=" pb-24">            
+            <div class="grid grid-cols-2 pt-3  gap-x-8 gap-y-0 lg:grid-cols-2">             
+                <div *ngFor="let x of obs | async" class=" rounded-lg flex col-span-1">
+                  <div   class="border-b border-gray-200 py-2">
+                    <div class="rounded-xl border   p-2 w-full bg-white ">
+                      <div class="flex w-full items-center justify-between border-b pb-3">
+                        <div class="flex items-center space-x-3">
+                          <div [ngStyle]="{'background': 'url(' + x.img + ') no-repeat 0 0 / cover'}" class="h-12 w-12 rounded bg-slate-400 bg-cover "></div>                      
+                         <div class="grid grid-cols-1 gap-1">
+                          <h3 class="  font-bold">{{x.CompanyName}}</h3>
+                         
+                          <span class="title h5 bg-indigo-600/5 left-0 text-indigo-600 text-xs font-bold py-0.5  rounded h-5">{{x.category}}</span>       </div>
+                        </div>
+                        <div class="flex flex-wrap items-center space-x-6">
+                          <button class="  relative flex items-center space-x-1 rounded-xl   px-2 py-2">           
+                            <span class="text-red-400 text-sm ">Interested</span>
+                            <svg fill="#f87171"class="icon transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 " width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14.37 2.56a3.92 3.92 0 0 0-3-1 4.1 4.1 0 0 0-1.82.52A9.18 9.18 0 0 0 8 3.06a9.35 9.35 0 0 0-1.49-1 3.85 3.85 0 0 0-1.77-.52A4.07 4.07 0 0 0 1.63 2.6 4 4 0 0 0 .35 5.52a3.83 3.83 0 0 0 .88 2.33 33.87 33.87 0 0 0 5.7 6.2l.39-.49-.38.49a1.67 1.67 0 0 0 1.06.42 1.71 1.71 0 0 0 1.08-.42 37.42 37.42 0 0 0 6.06-6.73 3.5 3.5 0 0 0 .47-1.74 4 4 0 0 0-1.24-3.02zm-.26 4.06a37.1 37.1 0 0 1-5.81 6.46.56.56 0 0 1-.28.13.51.51 0 0 1-.29-.14 32.77 32.77 0 0 1-5.49-5.94 2.74 2.74 0 0 1-.64-1.61 2.75 2.75 0 0 1 .88-2 2.79 2.79 0 0 1 2.16-.72h.1a2.73 2.73 0 0 1 1.19.38A10.23 10.23 0 0 1 7.24 4l.76.63.76-.63a9 9 0 0 1 1.34-.86 2.91 2.91 0 0 1 1.26-.39h.1a2.68 2.68 0 0 1 2.07.68 2.78 2.78 0 0 1 .87 2 2.18 2.18 0 0 1-.29 1.19z"/></svg>
+                         </button>
+                        </div>
+                        
+                      </div>
+                    <div class="mt-4 mb-6">        
+                      <div class="mb-3 "> <h1 class="text-xl font-semibold cursor-pointer hover:underline" routerLink="/Dashboard/JobDetails">{{x.title}}</h1>
+                        <small ><fa-icon [icon]="faBriefcase" class="pr-1"></fa-icon> {{x.type}}</small>       
+                        <small >  <fa-icon [icon]="faClock" class="pl-2 pr-1"></fa-icon>{{x.time}}</small> 
+                        <small  > <fa-icon [icon]="faLocation" class=" pl-2 pr-1"></fa-icon>{{x.location}}</small>
+                    </div>     
+                    
+                      <div class="text-sm text-gray-600">Aliquam a tristique sapien, nec bibendum urna. Maecenas convallis dignissim turpis, non suscipit mauris interdum at. Morbi sed gravida nisl, a pharetra nulla. Etiam tincidunt turpis leo, ut mollis ipsum consectetur quis. Etiam faucibus est risus, ac condimentum mauris consequat nec. Curabitur eget feugiat massa</div>
+                    </div>
+                    <div>
+                      <hr>
+                      <div class="flex items-center justify-between text-slate-500 pt-2">
+                        <div class="flex space-x-8 md:space-x-8">
+                          <div class="mb-3 text-xl text-gray-800">  <small >${{x.price}}/Hour</small></div>
+                          <div class="mb-3 text-md ">  <small >{{x.PApplied}} people applied</small></div>
+                        </div>
+                        <div class="flex items-center space-x-6">
+                            
+                            <button class="bg-blue-100 hover:bg-blue-200 text-blue-600 font-semibold py-2 px-2 rounded-xl" type="button">
+                                <span class="relative  text-sm  "> Apply now <fa-icon [icon]="faCheck" class="pr-1"></fa-icon></span> 
+                            </button>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  
+               
+                  
+                    
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+               
+            </div>
+            <mat-paginator
+            [pageSize]="8"
+            aria-label="Select page">
+            </mat-paginator>
+
+          </section>
+        </main>
+  
+      </main>
+    </div>
+</div>
+  
+  
+  
+  
+
